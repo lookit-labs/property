@@ -1,0 +1,25 @@
+html {
+    margin-right: 0 !important;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-1;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $color-2;
+    background-color: $color-1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    transform: scale(1);
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic
+}
