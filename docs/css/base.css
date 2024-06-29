@@ -1039,6 +1039,7 @@ Services Style
 }
 
 .service-item:hover > *,
+.service-item:hover p,
 .service-item:hover i
  {
     color: #fff;

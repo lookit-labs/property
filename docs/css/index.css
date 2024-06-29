@@ -32,19 +32,66 @@
     gap: 20px;
 }
 
+.house-icons{
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
 
-.description{
-    height: 350px;
+}
+
+.house-icons > div{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    gap: 5px;
+}
+
+.house-icons > div i {
+    background:  #f2f2f2;
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+
+.house-icons p{
+    font-weight: 600;
     font-size: 30px;
+    margin: 0;
+    color: #303030;
 }
 
-.description > div{
-    width: 90%;
+.description{
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    flex-direction: column;
 }
 
+.description > *{
+    font-weight: 700;
+}
+
+.description p:has(> img){
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.description img{
+    width: 50%;
+    min-width: 250px;
+}
+
+.description > p{
+    color: #202020;
+}
 
 .map-container{
     height: 500px;
@@ -84,7 +131,6 @@
     width: 100%;
     height: 100%;
 }
-
 
 .iphone{
     position: absolute;
@@ -274,11 +320,9 @@
     font-size: 50px;
 }
 
-
 .modal-title > h2{
     text-align: center;
-} 
-
+}
 
 .modal-header > .btn-close{
     margin-bottom: 50px;
@@ -326,9 +370,6 @@
     font-size: 15px;
 }
 
-
-
-
 @keyframes animate {
     0%{
         opacity: 0;
@@ -345,7 +386,6 @@
         grid-template-columns: minmax(300px,15%) 70%;
     }
 }
-
 
 @media (max-width: 1054px) {
     .service-item{
@@ -379,7 +419,7 @@
 
     .row-main-section{
         grid-template-columns: 100%;
-        grid-template-rows: 224.5px minmax(400px, calc(90vh - 224.5px)) !important;
+        grid-template-rows: 235px minmax(400px, calc(90vh - 235px)) !important;
         overflow: unset;
         gap: 20px;
     }
@@ -411,6 +451,21 @@
     .modal-header > .btn-close{
         margin-left: calc(100% - 2.5rem);
     }
+
+    .house-icons > div p {
+        font-size: 20px;
+    }
+
+    .house-icons{
+        gap: 20px;
+        height: 100px;
+    }
+
+    .house-icons > div i {
+        height: 40px;
+        width: 40px;
+    }
+
 }
 
 
